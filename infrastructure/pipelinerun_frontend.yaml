@@ -26,4 +26,4 @@ spec:
   - name: image-reference
     value: wicks482/tekton
   - name: repopath
-    value: /app/front-end/Dockerfile
+    value: /app/front-end/dockerfile

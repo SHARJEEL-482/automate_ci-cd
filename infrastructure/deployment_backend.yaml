@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: flask-backend-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: flask-backend
@@ -12,8 +12,8 @@ spec:
       labels:
         app: flask-backend
     spec:
-      nodeSelector:
-        kubernetes.io/hostname: minikube-m04
+      #nodeSelector:
+       # kubernetes.io/hostname: minikube-m04
       containers:
         - name: flask-backend-container
           image: hamzaarshad10/backend:latest
