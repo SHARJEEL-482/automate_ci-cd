@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/SHARJEEL-482/automate_ci-cd.git
-    path: flask-backend
+    path: infrastructure
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp
